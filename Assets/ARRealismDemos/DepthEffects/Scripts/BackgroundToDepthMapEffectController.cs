@@ -53,8 +53,8 @@ public class BackgroundToDepthMapEffectController : MonoBehaviour
     /// </summary>
     public Material BackgroundToDepthMapMaterial;
 
-    private const float _kTransitionDurationS = 4;
-    private const float _kMaxVisualizationDistanceM = 7;
+    private const float _kTransitionDurationS = 1;
+    private const float _kMaxVisualizationDistanceM = 2;
     private const float _kMinVisualizationDistanceM = 0.4f;
     private const float _kFarFadePortion = 0.15f;
     private const float _kHalfTransitionHighlightWidth = 0.15f;
@@ -119,7 +119,7 @@ public class BackgroundToDepthMapEffectController : MonoBehaviour
     {
         _enableOcclusionTransition = false;
         _applyAntiAliasing = 1f - _applyAntiAliasing;
-        CameraViewOpacity = 0;
+        CameraViewOpacity = 1;
         Transition = 0;
 
         if (_currentCoroutine != null)

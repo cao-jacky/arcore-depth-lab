@@ -121,17 +121,17 @@ Shader "DepthLab/BackgroundToDepth"
                 float distance = texture(_CurrentDepthTexture, textureCoord).x;
                 result = RenderCameraToDepthMapTransition(background, distance);
 
-                if (distance > 2.0) {
-                    result = vec3(255.0, 255.0, 255.0);
-                }
-
 #endif // ARCORE_ENVIRONMENT_DEPTH_ENABLED
 
 #ifndef UNITY_COLORSPACE_GAMMA
                 result = GammaToLinearSpace(result);
 #endif // UNITY_COLORSPACE_GAMMA
 
-                gl_FragColor = vec4(result, 0.1);
+                if (distance > 2.5 || distance < 1.0) {
+                    gl_FragColor = vec4(background, 0.1);
+                } else {
+                    gl_FragColor = vec4(result, 0.5);
+                }
                 // To enable occlusion with the depth image add `gl_FragDepth = depth;`.
 #endif // SHADER_API_GLES3
             }

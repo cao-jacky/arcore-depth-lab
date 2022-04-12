@@ -101,6 +101,10 @@ public class UpdateDistanceMetrics : MonoBehaviour
     private void Update()
     {
         HeightLabel.text = "Height\n" + EstimateCurrentHeight().ToString("F2") + " meters";
-        DistanceLabel.text = "Distance\n" + _orientedReticle.Distance.ToString("F2") + " meters";
+        DistanceLabel.text = "Distance\n" + _orientedReticle.Distance.ToString("F2") + " m";
+        if (_orientedReticle.Distance > 2)
+        {
+            Handheld.Vibrate();
+        }
     }
 }

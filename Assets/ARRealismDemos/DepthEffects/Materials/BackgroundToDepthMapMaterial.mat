@@ -73,7 +73,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _CameraViewOpacity: 1
+    - _CameraViewOpacity: 0
     - _Cutoff: 0.5
     - _DepthRange: 1
     - _DetailNormalMapScale: 1
@@ -84,7 +84,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HalfTransitionHighlightWidth: 0.15
-    - _MaxVisualizationDistance: 7
+    - _MaxVisualizationDistance: 2
     - _Metallic: 0
     - _MinDepth: 0
     - _Mode: 0

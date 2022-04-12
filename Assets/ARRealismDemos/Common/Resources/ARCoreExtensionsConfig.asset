@@ -13,6 +13,3 @@ MonoBehaviour:
   m_Name: ARCoreExtensionsConfig
   m_EditorClassIdentifier: 
   CloudAnchorMode: 0
-  SegmentationMode: 0
-  DepthModeOverride: 0
-  UseHorizontalAndVerticalLowFeatureGrowth: 0

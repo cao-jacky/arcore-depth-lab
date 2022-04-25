@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ARRealismDemos/PointCloud/Scenes/RawPointClouds.unity
     guid: 9dda67f2895da44a2a949d2298c7ff3a
+  - enabled: 0
+    path: Assets/UniWebView/Demo/UniWebViewDemo.unity
+    guid: 938c077f40a814d4584ce2ad17947cf3
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
